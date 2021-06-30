@@ -1,0 +1,20 @@
+@import "../assets/sass/mixins/breakpoint.scss";
+
+.container-main {
+
+    width: 100vw;
+    flex: 3;
+
+    @include bp(md) {
+        min-width: 800px;
+    }
+
+    .navigation {
+        background-color: royalblue;
+    }
+}
+
+.display-flex {
+    display: flex;
+
+}

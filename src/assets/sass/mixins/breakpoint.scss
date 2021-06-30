@@ -1,0 +1,14 @@
+@mixin bp($point) {
+    @if $point==md {
+        @media (min-width: 1024px) {
+            @content ;
+        }
+    }
+
+    @else if $point==sm {
+        @media (min-width: 680px) {
+            @content ;
+        }
+    }
+
+}

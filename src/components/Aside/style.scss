@@ -1,0 +1,20 @@
+@import "../../assets/sass/mixins/breakpoint.scss";
+
+
+
+.flex-1 {
+    flex: 1;
+}
+
+.aside {
+    display: none;
+    background: rgba(39, 145, 208, 1);
+
+
+    @include bp(md) {
+        min-width: 200px;
+        display: block;
+        min-height: 100vh;
+
+    }
+}
