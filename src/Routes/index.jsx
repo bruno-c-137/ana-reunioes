@@ -1,17 +1,19 @@
-import { BrowserRouter, Router, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import LayoutBase from "../layouts/base";
 import Geral from '../pages/Geral'
 
-const Routes = () => {
+export default function Routes() {
   return (
     <LayoutBase>
-      <BrowserRouter>
+      <Router>
         <Switch>
-            <Routes path='/' exact component={Geral} />
-
+          <Route path='/' exact component={Geral} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     </LayoutBase>
   );
 };
-export default Routes;
