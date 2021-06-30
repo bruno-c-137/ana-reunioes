@@ -1,8 +1,5 @@
-const Geral = () => {
+export default function Geral() {
   return (
-    <>
-      <h1>Geral</h1>
-    </>
+    <h1>Geral</h1>
   );
 };
-export default Geral;
