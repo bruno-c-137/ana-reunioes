@@ -8,13 +8,14 @@ export default function LayoutBase({ children }) {
       <div className="display-flex">
         <Aside />
         <div className="container-main">
-          <Header />
+          <div className="conteiner">
+            <div className="display-flex flex-direction-c">
+              <Header />
 
-          <div className="navigation">
-            <div>main</div>
+              <div className="flex-12">{children}</div>
+              <Footer />
+            </div>
           </div>
-          <div>{children}</div>
-          <Footer />
         </div>
       </div>
     </div>

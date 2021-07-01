@@ -1,5 +1,32 @@
 .header-component {
-    .top {
-        color: red;
+    .flex {
+        display: flex;
+
     }
+
+    .margin-t {
+        margin-top: 30px;
+    }
+
+    .justify-flex-end {
+        justify-content: flex-end;
+
+        .border-r {
+            border-right: 1px solid rgba(224, 224, 224, 1);
+
+            .logo-text {
+                color: rgba(39, 145, 208, 1);
+                padding-right: 40px;
+
+                text-align: end;
+
+            }
+        }
+
+        .img-logo {
+            padding-left: 40px;
+        }
+
+    }
+
 }

@@ -4,6 +4,26 @@
     width: 100vw;
     flex: 3;
 
+    .conteiner {
+        max-width: 100%;
+        width: 900px;
+        margin: 0 auto;
+
+        .flex-direction-c {
+            flex-direction: column;
+
+            & {
+                height: 100vh;
+            }
+
+            .flex-12 {
+                flex: 12;
+            }
+
+            
+        }
+    }
+
     @include bp(md) {
         min-width: 800px;
     }

@@ -6,6 +6,42 @@
     flex: 1;
 }
 
+.flex {
+    display: flex;
+}
+
+.content {
+    justify-content: flex-end;
+    margin-top: 130px;
+
+    text-align: end;
+}
+
+.margin-b {
+    margin-bottom: 15px;
+
+
+
+}
+
+.button-content {
+    text-align: end;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 0;
+    padding-right: 14px;
+    font-size: 16px;
+
+    &:focus {
+        font-size: 20px;
+        color: rgba(137, 255, 184, 1);
+        border-right: 3px solid rgba(137, 255, 184, 1);
+
+
+    }
+}
+
+
 .aside {
     display: none;
     background: rgba(39, 145, 208, 1);
