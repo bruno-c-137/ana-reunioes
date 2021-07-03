@@ -1,3 +1,4 @@
+import IMGlink from "../../assets/imgs/link-externo.svg";
 import "./style.scss";
 export default function Geral() {
   return (
@@ -33,6 +34,12 @@ export default function Geral() {
                   1ª reunião em 2021 da Sala de Crise da Região Sul
                 </h3>
                 <p className="titulo-h3">Horário: 10h</p>
+                <div className="flex">
+                <div className="text-link">Acessar</div>
+                <div>
+                  <img src={IMGlink} alt="" srcset="" />
+                </div>
+              </div>
               </div>
             </div>
           </div>
