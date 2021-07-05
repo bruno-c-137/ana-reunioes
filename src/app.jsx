@@ -1,5 +1,11 @@
 import "./assets/sass/main.scss";
+import { ProvideLayout } from "./contexts/layout";
 import Routes from "./Routes";
+
 export default function App() {
-  return <Routes />;
+  return (
+    <ProvideLayout>
+      <Routes />
+    </ProvideLayout>
+  );
 }

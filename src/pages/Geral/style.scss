@@ -1,16 +1,59 @@
 @import "../../assets//sass/mixins/breakpoint.scss";
 
-.text-titulo {
+.button {
+    border-radius: 6px;
+    width: 100%;
 
-    font-size: 64px;
-    line-height: 58px;
+    height: 43px;
+    background-color: transparent;
+    margin-bottom: 2%;
     color: rgba(39, 145, 208, 1);
+    font-size: 16px;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 150ms linear;
+    border: 2px solid rgba(39, 145, 208, 1);
+
+    &:hover {
+        background: rgba(39, 145, 208, 1);
+
+        box-shadow: 0px 3px 3px #3333335b;
+        color: #FFFFFF;
+    }
+
+
 
 
 }
 
-.flex {
-    display: flex;
+.content-text-link {
+    margin-top: 50px;
+
+}
+
+
+@include bp(md) {
+
+    .button {
+        width: 186px;
+    }
+
+    .text-titulo {
+        font-size: 64px;
+        line-height: 58px;
+    }
+
+    .flex-dt {
+        display: flex;
+    }
+
+}
+
+
+
+.flex-dt {
+
 
     .border-b {
         border-bottom: 1px solid #E0E0E0;
@@ -38,34 +81,16 @@
             padding-right: 18%;
         }
 
-
-    }
-
-    .button {
-        border-radius: 6px;
-        width: 186px;
-        height: 43px;
-        background-color: transparent;
-        margin-bottom: 2%;
-        color: rgba(39, 145, 208, 1);
-        font-size: 16px;
-
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 150ms linear;
-        border: 2px solid rgba(39, 145, 208, 1);
-
-        &:hover {
-            background: rgba(39, 145, 208, 1);
-
-            box-shadow: 0px 3px 3px #3333335b;
-            color: #FFFFFF;
+        .margin-b-r-dt {
+            margin-right: 3%;
         }
 
 
 
-
     }
+
+
+
 
     .margin-r {
         margin-right: 3%;

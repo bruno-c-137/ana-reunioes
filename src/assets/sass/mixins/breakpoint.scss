@@ -6,7 +6,7 @@
     }
 
     @else if $point==sm {
-        @media (min-width: 680px) {
+        @media (min-width: 280px) {
             @content ;
         }
     }

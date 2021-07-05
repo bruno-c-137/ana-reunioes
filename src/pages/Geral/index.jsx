@@ -6,7 +6,7 @@ export default function Geral() {
       <h1 className="text-titulo">
         Lorem ipsum dolor sit amet consectetur adipiscing elit.
       </h1>
-      <div className="flex">
+      <div className="flex-dt">
         <div className="flex-2 padding-r">
           <div className="border-b">
             <div className="margin-b">
@@ -35,11 +35,11 @@ export default function Geral() {
                 </h3>
                 <p className="titulo-h3">Horário: 10h</p>
                 <div className="flex">
-                <div className="text-link">Acessar</div>
-                <div>
-                  <img src={IMGlink} alt="" srcset="" />
+                  <div className="text-link">Acessar</div>
+                  <div>
+                    <img src={IMGlink} alt="" srcset="" />
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           </div>
@@ -49,20 +49,22 @@ export default function Geral() {
           <p className="text-sub">
             Escolha o Sistema Hídrico que você quer acompanhar
           </p>
-          <div className="flex">
-            <button className="button margin-r">Paraíba do Sul</button>
+          <div className="flex-dt">
+            <button className="button margin-b-r-dt">Paraíba do Sul</button>
             <button className="button">Sistema Cantareira</button>
           </div>
-          <div className="flex">
-            <button className="button margin-r">São Francisco</button>
+          <div className="flex-dt">
+            <button className="button margin-b-r-dt">São Francisco</button>
             <button className="button">Nordeste e Semiárido</button>
           </div>
-          <div className="flex">
-            <button className="button margin-r">Tocantins</button>
+          <div className="flex-dt">
+            <button className="button margin-b-r-dt">Tocantins</button>
             <button className="button">Outros Sistemas Hídricos</button>
           </div>
         </div>
       </div>
+      <div className="content-text-link text-sub">
+        <span className="text-link"> Acesse aqui</span>o calendário completo das reuniões</div>
     </>
   );
 }

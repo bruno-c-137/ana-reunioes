@@ -13,10 +13,10 @@ export default function Reunioes() {
           </p>
         </div>
       </div>
-      <div className="flex ">
-        <div className="border-t">
-          <div className="margin-content-t">
-            <button className="button margin-r">Próximas reuniões</button>
+      <div className="flex-dt ">
+        <div className="border-t button-dt-margin-r">
+          <div className="margin-content-t flex-column flex-mb">
+            <button className="button margin-b-r-dt">Próximas reuniões</button>
             <button className="button">Reuniões Anteriores</button>
           </div>
         </div>

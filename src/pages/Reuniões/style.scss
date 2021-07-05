@@ -1,3 +1,23 @@
+@import "../../assets//sass/mixins/breakpoint.scss";
+
+@include bp (md) {
+    .flex-dt {
+        display: flex;
+
+        .button-dt-margin-r {
+            margin-right: 150px;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .max-content {
+        width: max-content;
+    }
+}
+
 .text-sub {
     font-size: 16px;
     color: rgba(102, 102, 102, 1);
@@ -8,9 +28,7 @@
     margin-bottom: 20px;
 }
 
-.max-content {
-    width: max-content;
-}
+
 
 .border-t {
     border-top: 1px solid #E0E0E0;

@@ -12,7 +12,7 @@ export default function LayoutBase({ children }) {
             <div className="display-flex flex-direction-c">
               <Header />
 
-              <div className="flex-12">{children}</div>
+              <div className="flex-12 margin-content-b">{children}</div>
               <Footer />
             </div>
           </div>

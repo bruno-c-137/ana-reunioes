@@ -43,14 +43,27 @@
 
 
 .aside {
-    display: none;
+
     background: rgba(39, 145, 208, 1);
+    min-width: 285px;
+    position: fixed;
 
 
-    @include bp(md) {
+}
+.aside-dt{
+    display: none;
+}
+
+@include bp(md) {
+    .aside {
         min-width: 200px;
         display: block;
         min-height: 100vh;
-
+        position: inherit;
     }
+    .aside-dt{
+        display: block;
+    }
+
+
 }

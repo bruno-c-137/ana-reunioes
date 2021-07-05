@@ -16,8 +16,8 @@ export default function Noticias() {
           consectetur eget risus in, accumsan pharetra eros. Duis fringilla
           lacinia nibh eu pellentesque.
         </p>
-        <div>
-          <img src={IMGcontant} alt="" srcset="" />
+        <div className="img">
+         
         </div>
         <p className="text-sub">
           Donec eu justo sit amet tellus pretium posuere non vitae tortor. Duis

@@ -1,3 +1,5 @@
+@import "../../assets/sass/mixins/breakpoint.scss";
+
 .header-component {
     .flex {
         display: flex;
@@ -10,23 +12,78 @@
 
     .justify-flex-end {
         justify-content: flex-end;
+        align-items: center;
 
-        .border-r {
-            border-right: 1px solid rgba(224, 224, 224, 1);
+        .border-l {
+            border-left: 1px solid rgba(224, 224, 224, 1);
 
-            .logo-text {
-                color: rgba(39, 145, 208, 1);
-                padding-right: 40px;
 
-                text-align: end;
-
-            }
         }
 
-        .img-logo {
-            padding-left: 40px;
-        }
+
 
     }
 
+}
+
+
+.img-logo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo-text {
+    color: rgba(39, 145, 208, 1);
+    padding-right: 20px;
+    font-size: 13px;
+
+    text-align: end;
+
+}
+
+.button-menu {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(39, 145, 208, 1);
+
+}
+
+.div-img-logo {
+    background-image: url("../../assets/imgs/logo-mb.png");
+    height: 35px;
+    width: 87px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+@include bp(md) {
+    .div-img-logo {
+        background-image: url("../../assets/imgs/logo.png");
+        height: 46px;
+        width: 114px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@include bp(md) {
+    .logo-text {
+
+        padding-right: 40px;
+        font-size: 16px;
+
+
+
+    }
+
+    .img-logo {
+        padding-left: 40px;
+    }
 }

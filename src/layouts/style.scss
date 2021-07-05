@@ -4,25 +4,41 @@
     width: 100vw;
     flex: 3;
 
+
     .conteiner {
         max-width: 100%;
-        width: 900px;
+        width: 85%;
+
         margin: 0 auto;
 
-        .flex-direction-c {
-            flex-direction: column;
 
-            & {
-                min-height: 100vh;
+    }
 
-            }
 
-            .flex-12 {
-                flex: 12;
-            }
+    @include bp(md) {
+        .conteiner {
+            max-width: 100%;
+            width: 900px;
+            margin: 0 auto;
+        }
+    }
 
+    .flex-direction-c {
+        flex-direction: column;
+
+        & {
+            min-height: 100vh;
 
         }
+
+        .flex-12 {
+            flex: 12;
+        }
+
+
+    }
+    .margin-content-b{
+        margin-bottom: 60px;
     }
 
     @include bp(md) {
@@ -33,6 +49,7 @@
         background-color: royalblue;
     }
 }
+
 
 .display-flex {
     display: flex;

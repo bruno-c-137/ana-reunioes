@@ -1,3 +1,5 @@
+@import "../sass/mixins/breakpoint.scss";
+
 @font-face {
     font-family: "Robot";
     src: url("../Fonts/Roboto-Regular.ttf");
@@ -11,9 +13,38 @@ body {
 button {
     font-family: Robot;
 }
-.margin-t-head{
+
+.margin-t-head {
     margin-top: 50px;
 }
-.margin-t-0{
+
+.margin-t-0 {
     margin-top: 0;
+}
+
+.text-titulo {
+
+    font-size: 2.5em;
+    line-height: 1.0;
+
+    color: rgba(39, 145, 208, 1);
+
+
+}
+
+
+
+
+.flex-mb {
+    display: flex;
+}
+
+.button-menu {
+    display: flex;
+}
+
+@include bp(md) {
+    .button-menu {
+        display: none;
+    }
 }

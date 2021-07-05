@@ -1,0 +1,48 @@
+.button-data {
+  border: 0;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  background-color: transparent;
+  color: rgba(39, 145, 208, 1);
+  font-size: 16px;
+
+
+
+}
+.button-data-1 {
+  border: 0;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  background-color: transparent;
+  color: rgba(39, 145, 208, 1);
+  font-size: 16px;
+
+
+
+}
+
+
+.hidden {
+  display: none;
+}
+.button-data-1::before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 130px;
+  border: .3em solid black;
+  border-color: rgba(39, 145, 208, 1) transparent transparent transparent;
+  transition: .4s all ease-in-out;
+  font-size: 20px;
+  transform: rotate(-180deg);
+}
+
+.button-data::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 130px;
+  border: .3em solid black;
+  border-color: rgba(39, 145, 208, 1) transparent transparent transparent;
+  transition: .4s all ease-in-out;
+  font-size: 20px;
+}
+
