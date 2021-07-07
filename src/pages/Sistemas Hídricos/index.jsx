@@ -44,13 +44,14 @@ export default function SistemasHidricos() {
       </div>
       <div className="flex flex-position-colunm">
         <div
+          id="menu1"
           className={String(
             layoutContex.menuOpen
-              ? "flex-1 margin-content-component-b"
+              ? "flex-1 margin-content-component-b column-menu-mb"
               : "flex flex-1 margin-content-component-b menu-dt"
           )}
         >
-          <div className="flex-1">
+          <div className="flex-1 order-informacao column-menu-mb">
             <div className="flex menu-dt">
               <div className="IMG-info-r">
                 <img src={IMGInfo} alt="" />
@@ -59,12 +60,34 @@ export default function SistemasHidricos() {
                 <b> Informações</b>
               </div>
             </div>
-            <div>
+            <div className="order-informacao">
               <DatePicker
                 selected={startDate}
                 onChange={(date) => setStartDate(date)}
                 customInput={<ExampleCustomInput />}
               />
+            </div>
+            <div className="margin-content-volume">
+              <div className="flex-mb">
+                <div className="flex flex-1">
+                  <div className="volume-content margin-text-grafico-r-10 color-volume-1"></div>
+                  <div className="text-sub margin-text-b ">Paraibuma</div>
+                </div>
+                <div className="flex flex-1">
+                  <div className="volume-content margin-text-grafico-r-10 color-volume-2"></div>
+                  <div className="text-sub margin-text-b">Santa Branca</div>
+                </div>
+              </div>
+              <div className="flex-mb">
+                <div className="flex flex-1">
+                  <div className="volume-content margin-text-grafico-r-10 color-volume-3"></div>
+                  <div className="text-sub margin-text-b">Jaguari</div>
+                </div>
+                <div className="flex flex-1">
+                  <div className="volume-content margin-text-grafico-r-10 color-volume-4"></div>
+                  <div className="text-sub">Funil</div>
+                </div>
+              </div>
             </div>
           </div>
           <div className=" flex-1">
@@ -80,73 +103,41 @@ export default function SistemasHidricos() {
               </div>
               <div>
                 <div className="width-text-gafico text-sub margin-text-grafico-r-10">
-                62,85%
+                  62,85%
                 </div>
                 <div className="grafico-2"></div>
               </div>
               <div>
                 <div className="width-text-gafico text-sub margin-text-grafico-r-10">
-                40,70%
+                  40,70%
                 </div>
                 <div className="grafico-3"></div>
               </div>
               <div>
                 <div className="width-text-gafico text-sub margin-text-grafico-r-25">
-                50,15%
+                  50,15%
                 </div>
                 <div className="grafico-4"></div>
               </div>
             </div>
           </div>
-          <div className="flex flex-1">
+          <div className="flex flex-1 order-reservatorio">
             <div>
               <div className="text-sub">
                 <b>Reservatório</b>
               </div>
               <div>
-                <div class="dropdown">
-                  <button></button>
-                  <div class="options">
-                    <input
-                      id="radio-Paraibuna"
-                      type="radio"
-                      name="region"
-                      value="Paraibuna"
-                      checked
-                    />
-                    <label for="radio-Paraibuna">Paraibuna</label>
-                    <input
-                      id="radio-asia"
-                      type="radio"
-                      name="region"
-                      value="asia"
-                    />
-                    <label className="label-1" for="radio-asia">
-                      Asia
-                    </label>
-
-                    <input
-                      id="radio-australia"
-                      type="radio"
-                      name="region"
-                      value="australia"
-                    />
-                    <label className="label-2" for="radio-australia">
-                      Australia
-                    </label>
-                    <input
-                      id="radio-brasil"
-                      type="radio"
-                      name="region"
-                      value="Brasil"
-                    />
-                    <label className="label-3" for="radio-brasil">
-                      Brasil
-                    </label>
+                <div class="select">
+                  <select name="slct" id="slct">
+                    <option value="1"> Mensal</option>
+                    <option value="2">No JS</option>
+                    <option value="3">Nice!</option>
+                  </select>
+                  <div class="svg-select">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
                   </div>
-                  <svg viewBox="0 0 24 24">
-                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                  </svg>
                 </div>
               </div>
               <div className="flex">
@@ -195,6 +186,7 @@ export default function SistemasHidricos() {
           </div>
         </div>
         <div
+          id="menu2"
           className={String(
             layoutContex.menuOpen2
               ? "flex-1"
@@ -212,12 +204,28 @@ export default function SistemasHidricos() {
                 </div>
               </div>
             </div>
-            <div>
-              <DatePicker
-                selected={startDate}
-                onChange={(date) => setStartDate(date)}
-                customInput={<ExampleCustomInput />}
-              />
+            <div className="flex column-data-dt">
+              <div className="flex-1">
+                <DatePicker
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  customInput={<ExampleCustomInput />}
+                />
+              </div>
+              <div className="flex-1">
+                <div class="select">
+                  <select name="slct" id="slct">
+                    <option value="1"> Mensal</option>
+                    <option value="2">No JS</option>
+                    <option value="3">Nice!</option>
+                  </select>
+                  <div class="svg-select">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex-2 margin-content-component-t">
@@ -230,12 +238,12 @@ export default function SistemasHidricos() {
               </div>
               <div className="data-text-pdf border-text-b">
                 <div className="flex-2">
-                  <div className="text-sub">
+                  <div className="text-boletim">
                     <b> Boletim Diário de monitoramento</b>
                   </div>
                   <div className="text-sub">16/11/2020</div>
                 </div>
-                <div className="flex">
+                <div className="flex margin-icon">
                   <div className="margin-r-icon-pdf">
                     <img src={PDF1} alt="" />
                   </div>
@@ -257,12 +265,12 @@ export default function SistemasHidricos() {
               </div>
               <div className="data-text-pdf border-text-b">
                 <div className="flex-2">
-                  <div className="text-sub">
+                  <div className="text-boletim">
                     <b> Boletim Diário de monitoramento</b>
                   </div>
-                  <div className="text-sub">16/11/2020</div>
+                  <div className="text-boletim">16/11/2020</div>
                 </div>
-                <div className="flex">
+                <div className="flex margin-icon">
                   <div className="margin-r-icon-pdf">
                     <img src={PDF1} alt="" />
                   </div>
@@ -284,12 +292,12 @@ export default function SistemasHidricos() {
               </div>
               <div className="data-text-pdf border-text-b">
                 <div className="flex-2">
-                  <div className="text-sub">
+                  <div className="text-boletim">
                     <b> Boletim Diário de monitoramento</b>
                   </div>
-                  <div className="text-sub">16/11/2020</div>
+                  <div className="text-boletim">16/11/2020</div>
                 </div>
-                <div className="flex">
+                <div className="flex margin-icon">
                   <div className="margin-r-icon-pdf">
                     <img src={PDF1} alt="" />
                   </div>
@@ -311,12 +319,12 @@ export default function SistemasHidricos() {
               </div>
               <div className="data-text-pdf border-text-b">
                 <div className="flex-2">
-                  <div className="text-sub">
+                  <div className="text-boletim">
                     <b> Boletim Diário de monitoramento</b>
                   </div>
-                  <div className="text-sub">16/11/2020</div>
+                  <div className="text-boletim">16/11/2020</div>
                 </div>
-                <div className="flex">
+                <div className="flex margin-icon">
                   <div className="margin-r-icon-pdf">
                     <img src={PDF1} alt="" />
                   </div>
@@ -333,6 +341,7 @@ export default function SistemasHidricos() {
         </div>
 
         <div
+          id="menu1"
           className={String(
             layoutContex.menuOpen3 ? "flex-1" : "flex flex-1 menu-dt"
           )}

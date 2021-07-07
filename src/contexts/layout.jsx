@@ -19,7 +19,12 @@ function useProvideLayout() {
   let [menuOpen2, setmenuOpen2] = useState(false);
   let [menuOpen3, setmenuOpen3] = useState(false);
   const [navOpen, setnavOpen] = useState(false);
-  
+  function show() {
+    var menu1 = document.getElementById("menu1");
+    var menu2 = document.getElementById("menu2");
+    var menu3 = document.getElementById("menu3");
+  }
+
   return {
     menuOpen,
     setmenuOpen,
@@ -28,6 +33,7 @@ function useProvideLayout() {
     menuOpen2,
     setmenuOpen2,
     menuOpen3,
-    setmenuOpen3
+    setmenuOpen3,
+    show,
   };
 }
